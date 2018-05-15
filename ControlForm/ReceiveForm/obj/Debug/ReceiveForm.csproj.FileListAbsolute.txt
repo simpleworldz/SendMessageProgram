@@ -1,0 +1,9 @@
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\bin\Debug\ReceiveForm.exe.config
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\bin\Debug\ReceiveForm.exe
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\bin\Debug\ReceiveForm.pdb
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.Properties.Resources.resources
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.ReceiveForm.resources
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.csproj.GenerateResource.Cache
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.csproj.CoreCompileInputs.cache
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.exe
+C:\Users\zhen\Desktop\github\1\ControlForm\ReceiveForm\obj\Debug\ReceiveForm.pdb
