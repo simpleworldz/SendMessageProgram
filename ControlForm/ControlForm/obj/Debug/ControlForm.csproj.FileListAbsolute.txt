@@ -7,3 +7,12 @@ C:\Users\zhen\Desktop\github\1\ControlForm\ControlForm\bin\Debug\ControlForm.pdb
 C:\Users\zhen\Desktop\github\1\ControlForm\ControlForm\obj\Debug\ControlForm.exe
 C:\Users\zhen\Desktop\github\1\ControlForm\ControlForm\obj\Debug\ControlForm.pdb
 C:\Users\zhen\Desktop\github\1\ControlForm\ControlForm\obj\Debug\ControlForm.SendForm.resources
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\bin\Debug\ControlForm.exe.config
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\bin\Debug\ControlForm.exe
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\bin\Debug\ControlForm.pdb
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.Properties.Resources.resources
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.SendForm.resources
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.csproj.GenerateResource.Cache
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.csproj.CoreCompileInputs.cache
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.exe
+C:\Users\zhen\Desktop\github\ControlForm\ControlForm\ControlForm\obj\Debug\ControlForm.pdb

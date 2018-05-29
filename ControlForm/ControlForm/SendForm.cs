@@ -76,7 +76,7 @@ namespace ControlForm
             IntPtr textBoxIP = FindWindowEx(receiveFormIP, new IntPtr(0), null, "");
             return textBoxIP;
         }
-         //方法一
+        //方法一
         /// <summary>
         /// 获取ReceiveForm的textBox
         /// </summary>
@@ -84,7 +84,7 @@ namespace ControlForm
         /// <param name="listWnd">ReceiveForm中的控件列表</param>
         /// <returns></returns>
         public IntPtr GetTextBoxIP(IntPtr btn, List<IntPtr> listWnd)
-        {  
+        {
             IntPtr textBoxIP = new IntPtr(0);
             foreach (IntPtr item in listWnd)
             {
@@ -102,25 +102,10 @@ namespace ControlForm
         /// <param name="textBoxIP">ReceiveForm的textBox控件</param>
         public void Send(IntPtr textBoxIP)
         {
-            char[] message = textBox1.Text.ToArray();
-            foreach (char ch in message)
-            {
-                SendChar(textBoxIP, ch, 150);
-            }
+            //char[] message = textBox1.Text.ToArray();
+            string message = textBox1.Text;
+            SendMessage(textBoxIP, WM_SETTEXT, IntPtr.Zero, message);
         }
-    
-        /// <summary>
-        /// 向item中发送字符
-        /// </summary>
-        /// <param name="item">textBox句柄</param>
-        /// <param name="ch">要发送的字符</param>
-        /// <param name="sleepTime">发送一个字符后sleep的时间</param>
-        public void SendChar(IntPtr textbox, char ch, int sleepTime)
-        {
-            PostMessage(textbox, WM_CHAR, ch, 0);
-            System.Threading.Thread.Sleep(sleepTime);
-        }
-
         private void SendBtn_Click(object sender, EventArgs e)
         {
             Verify();
@@ -139,13 +124,17 @@ namespace ControlForm
             Verify();
             IntPtr reTextBoxIp = GetTextBoxIP(listWnd);
             //(IntPtr)8 表示删除操作
-            SendMessage(reTextBoxIp, WM_CHAR, (IntPtr)8, "0");
+            //SendMessage(reTextBoxIp, WM_CHAR, (IntPtr)8, "0");
+            //发送个""过去，表示清空
+            SendMessage(reTextBoxIp, WM_SETTEXT, IntPtr.Zero, "");
         }
         //处理的消息种类
         //按下按键
         public static int WM_CLICK = 0x00F5;
         //WM_CHAR消息是俘获某一个字符的消息
         public static int WM_CHAR = 0x102;
+        //支持发送中文
+        private const int WM_SETTEXT = 0x000C;
 
         //向指定窗口Send Message（判断接收成功后继续执行后续函数）
         [DllImport("User32.dll", EntryPoint = "SendMessage")]
@@ -161,7 +150,6 @@ namespace ControlForm
         //获取窗口
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
-
 
     }
     public delegate bool CallBack(IntPtr hwnd, int lParam);
